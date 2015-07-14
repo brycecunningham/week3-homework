@@ -8,5 +8,10 @@ class PlacesController < ApplicationController
 		@place = Place.find_by(:id => params["id"])
 	end
 
+	def delete
+		@place = Place.find_by(:id => params["id"])
+		@place.delete
+		redirect_to root_url
+	end
 
 end
