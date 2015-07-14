@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 	root 'places#index'
 
 	get '/places' => 'places#index'
-  # Put your routes here
+
+	get '/places/:id' => 'places#show'
 
 end
