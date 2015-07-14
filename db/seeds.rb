@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Place.delete_all
+
+Place.create(:title => 'Navy Pier', :photo_url => '/blah', :price => 0, :description => 'a pier')
+Place.create(:title => 'Willis Tower', :photo_url => '/blah', :price => 0, :description => 'a building')
+Place.create(:title => 'MSI', :photo_url => '/blah', :price => 0, :description => 'a museum')
+Place.create(:title => 'Wrigley Field', :photo_url => '/blah', :price => 0, :description => 'a stadium')
+Place.create(:title => 'Midway Airport', :photo_url => '/blah', :price => 0, :description => 'an airport')
